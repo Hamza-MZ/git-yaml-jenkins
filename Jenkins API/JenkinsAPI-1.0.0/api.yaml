@@ -1,0 +1,125 @@
+type: api
+version: v4.1.0
+data:
+  id: 1b1e2a21-4a2a-4a2c-9b1a-042fb53ab749
+  name: JenkinsAPI
+  description: This is a simple API .
+  context: /jenkinsapi
+  version: 1.0.0
+  provider: admin
+  lifeCycleStatus: CREATED
+  responseCachingEnabled: false
+  cacheTimeout: 300
+  hasThumbnail: false
+  isDefaultVersion: false
+  isRevision: false
+  revisionId: 0
+  enableSchemaValidation: false
+  type: HTTP
+  transport:
+   - http
+   - https
+  tags:
+   - add
+   - substract
+  policies:
+   - Gold
+   - Unlimited
+  apiThrottlingPolicy: Unlimited
+  securityScheme:
+   - oauth2
+   - oauth_basic_auth_api_key_mandatory
+  maxTps:
+    production: 1000
+    sandbox: 1000
+  visibility: PUBLIC
+  visibleRoles: []
+  visibleTenants: []
+  mediationPolicies: []
+  subscriptionAvailability: CURRENT_TENANT
+  subscriptionAvailableTenants: []
+  additionalProperties:
+   -
+    name: AdditionalProperty
+    value: PropertyValue
+    display: true
+  additionalPropertiesMap:
+    AdditionalProperty__display:
+      name: AdditionalProperty
+      value: PropertyValue
+      display: false
+  accessControl: NONE
+  accessControlRoles: []
+  businessInformation:
+    businessOwner: John Doe
+    businessOwnerEmail: johndoe@wso2.com
+    technicalOwner: Jane Roe
+    technicalOwnerEmail: janeroe@wso2.com
+  corsConfiguration:
+    corsConfigurationEnabled: false
+    accessControlAllowOrigins:
+     - '*'
+    accessControlAllowCredentials: false
+    accessControlAllowHeaders:
+     - authorization
+     - Access-Control-Allow-Origin
+     - Content-Type
+     - SOAPAction
+     - apikey
+     - Internal-Key
+    accessControlAllowMethods:
+     - GET
+     - PUT
+     - POST
+     - DELETE
+     - PATCH
+     - OPTIONS
+  websubSubscriptionConfiguration:
+    enable: false
+    secret: ""
+    signingAlgorithm: SHA1
+    signatureHeader: x-hub-signature
+  createdTime: "1699005128118"
+  lastUpdatedTime: 2023-11-03 15:35:30.034
+  endpointConfig:
+    endpoint_type: http
+    sandbox_endpoints:
+      url: https://localhost:9443/am/sample/pizzashack/v1/api/
+    production_endpoints:
+      url: https://localhost:9443/am/sample/pizzashack/v1/api/
+  endpointImplementationType: ENDPOINT
+  scopes: []
+  operations:
+   -
+    id: ""
+    target: "/order/{orderId}"
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+    operationPolicies:
+      request: []
+      response: []
+      fault: []
+   -
+    id: ""
+    target: /menu
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+    operationPolicies:
+      request: []
+      response: []
+      fault: []
+  categories: []
+  keyManagers:
+   - all
+  advertiseInfo:
+    advertised: false
+    vendor: WSO2
+  gatewayVendor: wso2
+  asyncTransportProtocols: []
+  organizationId: carbon.super
